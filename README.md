@@ -15,7 +15,7 @@ Using a touch sensor, color sensor, and a ultrasonic sensor, our robot "UY" can 
 - MATLAB: Support Package for LEGO MINDSTORMS EV3
 
 **Hardware**
-- EV3 compatible robotics kit (RobotShop) — custom-built frame
+- EV3 compatible robotics kit (RobotShop)
 - EV3 programmable brick
 - Sensors: touch, color, ultrasonic
 - Motors: 2 drive + 1 claw motor
