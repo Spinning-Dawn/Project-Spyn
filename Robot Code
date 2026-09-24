@@ -1,0 +1,111 @@
+global key
+InitKeyboard();
+while 1
+touch = brick.TouchPressed(1);
+if touch
+   brick.MoveMotor('AB', 25)
+   pause(2)
+   brick.StopAllMotors('Brake');
+   brick.MoveMotor('A', -43);
+   brick.MoveMotor('B', 34);
+   pause(2);
+   brick.StopAllMotors('Brake')
+end
+pause(0.1);
+distance = brick.UltrasonicDist(3);
+display(distance);
+brick.SetColorMode(4,2);                      
+pause(0.13)
+color = brick.ColorCode(4);
+display(color);
+switch color
+case 1
+if (distance<50)
+ brick.MoveMotor('AB', -30);
+else(distance >= 50);
+  brick.MoveMotor('B', -50); % -97
+  brick.MoveMotor('A', 44); % 85
+  pause(1.32);
+  brick.StopAllMotors('Brake')
+  brick.MoveMotor('AB', -35)
+  pause(3)
+  brick.StopAllMotors('Brake');
+end
+case 2
+brick.StopAllMotors('Break');           
+pause(1)
+switch key
+case 'uparrow'
+brick.MoveMotor('AB', -15);
+pause(1.3);
+brick.StopAllMotors('Coast')
+case 'downarrow'
+brick.MoveMotor('AB', 15);
+pause(1.3);
+brick.StopAllMotors('Coast')
+case 'leftarrow'
+brick.MoveMotor('B', -40); % -60
+brick.MoveMotor('A', 20); %30
+pause(0.3);
+brick.StopAllMotors('Coast')
+case 'rightarrow'
+brick.MoveMotor('A', -55); %-79
+brick.MoveMotor('B', 64); % 84
+pause(0.5);
+brick.StopAllMotors('Coast')
+case 'w'
+brick.MoveMotor('C', 10);
+pause(0.3)
+brick.StopAllMotors('Brake')
+case 's'
+brick.MoveMotor('C', -5);
+pause(0.3);
+brick.StopAllMotors('Brake');
+end
+case 3
+ brick.StopAllMotors('Break')
+switch key
+    case 'uparrow'
+brick.MoveMotor('AB', -15);
+pause(1.3);
+brick.StopAllMotors('Coast')
+case 'downarrow'
+brick.MoveMotor('AB', 15);
+pause(1.3);
+brick.StopAllMotors('Coast')
+case 'leftarrow'
+brick.MoveMotor('B', -40); % -60
+brick.MoveMotor('A', 20); %30
+pause(0.3);
+brick.StopAllMotors('Coast')
+case 'rightarrow'
+brick.MoveMotor('A', -55); %-79
+brick.MoveMotor('B', 64); % 84
+pause(0.5);
+brick.StopAllMotors('Coast')
+case 'w'
+brick.MoveMotor('C', 10);
+pause(0.3)
+brick.StopAllMotors('Brake')
+case 's'
+brick.MoveMotor('C', -5);
+pause(0.3);
+brick.StopAllMotors('Brake');
+end
+case 4
+brick.MoveMotor('AB', -30)
+switch key
+   case 'y'
+     break;
+end
+case 5
+brick.StopAllMotors('Brake');
+ pause(2)
+ brick.MoveMotor('AB', -30);
+ pause(0.75)
+   case 6
+ brick.MoveMotor('AB', -3);      
+ pause(5);
+end
+end
+CloseKeyboard();
