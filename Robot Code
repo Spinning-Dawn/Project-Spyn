@@ -32,7 +32,7 @@ else(distance >= 50);
   brick.StopAllMotors('Brake');
 end
 case 2
-brick.StopAllMotors('Break');           
+brick.StopAllMotors('Brake');           
 pause(1)
 switch key
 case 'uparrow'
@@ -63,7 +63,7 @@ pause(0.3);
 brick.StopAllMotors('Brake');
 end
 case 3
- brick.StopAllMotors('Break')
+ brick.StopAllMotors('Brake')
 switch key
     case 'uparrow'
 brick.MoveMotor('AB', -15);
