@@ -20,5 +20,5 @@ Using a touch sensor, color sensor, and a ultrasonic sensor, our robot "UY" can 
 - Sensors: touch, color, ultrasonic
 - Motors: 2 drive + 1 claw motor
 
- ![UY robot and team](<img width="776" height="582" alt="b1edd723-475e-4767-a233-baff46d83515" src="https://github.com/user-attachments/assets/4c6dc92d-6d41-464e-9206-40f858a4465b" />
-)
+<img width="776" height="582" alt="b1edd723-475e-4767-a233-baff46d83515" src="https://github.com/user-attachments/assets/bfa6e44c-5d4d-4c7c-91fd-6c7fc96158f7" />
+
