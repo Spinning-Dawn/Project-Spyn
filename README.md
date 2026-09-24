@@ -19,3 +19,6 @@ Using a touch sensor, color sensor, and a ultrasonic sensor, our robot "UY" can 
 - EV3 programmable brick
 - Sensors: touch, color, ultrasonic
 - Motors: 2 drive + 1 claw motor
+
+ ![UY robot and team](<img width="776" height="582" alt="b1edd723-475e-4767-a233-baff46d83515" src="https://github.com/user-attachments/assets/4c6dc92d-6d41-464e-9206-40f858a4465b" />
+)
