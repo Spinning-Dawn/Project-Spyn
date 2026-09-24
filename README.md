@@ -1,5 +1,5 @@
 # Project-Spyn
-FSE 100 project for an autonomous EV3 compatible robot built for course navigation and payload pick up/drop off. 
+Engineering project for an autonomous EV3 compatible robot built for course navigation and payload pick up/drop off. 
 
 ## Team
 - Angel Garcia    (Programmer/builder)
